@@ -95,7 +95,7 @@ public class Example {
     
     // Configure HTTP bearer authorization: openai-api-key
     HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
-    openai-api-key.setBearerToken("BEARER TOKEN");
+    openai-api-key.setBearerToken("OPENAI_API_KEY");
 
     AudioApi apiInstance = new AudioApi(defaultClient);
     File _file = new File("/path/to/file"); // File | The audio file to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm. 
