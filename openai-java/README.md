@@ -2,7 +2,7 @@
 
 OpenAI API
 - API version: 1.2.0
-  - Build date: 2023-03-27T16:09:35.007070044-07:00[America/Los_Angeles]
+  - Build date: 2023-03-27T16:51:01.357479157-07:00[America/Los_Angeles]
 
 The OpenAI REST API
 
@@ -84,6 +84,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.AudioApi;
 
@@ -91,6 +92,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     AudioApi apiInstance = new AudioApi(defaultClient);
     File _file = new File("/path/to/file"); // File | The audio file to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm. 
@@ -210,8 +215,11 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
-All endpoints do not require authorization.
 Authentication schemes defined for the API:
+### openai-api-key
+
+- **Type**: HTTP basic authentication
+
 
 ## Recommendation
 

@@ -25,6 +25,7 @@ Immediately cancel a fine-tune job.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FineTunesApi;
 
@@ -32,6 +33,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FineTunesApi apiInstance = new FineTunesApi(defaultClient);
     String fineTuneId = "ft-AF1WoRqd3aJAHsqc9NY7iL8F"; // String | The ID of the fine-tune job to cancel 
@@ -61,7 +66,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -87,6 +92,7 @@ Creates a job that fine-tunes a specified model from a given dataset.  Response 
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FineTunesApi;
 
@@ -94,6 +100,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FineTunesApi apiInstance = new FineTunesApi(defaultClient);
     CreateFineTuneRequest createFineTuneRequest = new CreateFineTuneRequest(); // CreateFineTuneRequest | 
@@ -123,7 +133,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -149,6 +159,7 @@ Get fine-grained status updates for a fine-tune job.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FineTunesApi;
 
@@ -156,6 +167,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FineTunesApi apiInstance = new FineTunesApi(defaultClient);
     String fineTuneId = "ft-AF1WoRqd3aJAHsqc9NY7iL8F"; // String | The ID of the fine-tune job to get events for. 
@@ -187,7 +202,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -213,6 +228,7 @@ List your organization&#39;s fine-tuning jobs
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FineTunesApi;
 
@@ -220,6 +236,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FineTunesApi apiInstance = new FineTunesApi(defaultClient);
     try {
@@ -245,7 +265,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -271,6 +291,7 @@ Gets info about the fine-tune job.  [Learn more about Fine-tuning](/docs/guides/
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FineTunesApi;
 
@@ -278,6 +299,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FineTunesApi apiInstance = new FineTunesApi(defaultClient);
     String fineTuneId = "ft-AF1WoRqd3aJAHsqc9NY7iL8F"; // String | The ID of the fine-tune job 
@@ -307,7 +332,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 

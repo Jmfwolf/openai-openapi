@@ -50,7 +50,7 @@ import com.google.gson.JsonParseException;
 
 import space.fraktured.ai.client.JSON;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-03-27T16:09:35.007070044-07:00[America/Los_Angeles]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-03-27T16:51:01.357479157-07:00[America/Los_Angeles]")
 public class CreateEmbeddingRequestInput extends AbstractOpenApiSchema {
     private static final Logger log = Logger.getLogger(CreateEmbeddingRequestInput.class.getName());
 

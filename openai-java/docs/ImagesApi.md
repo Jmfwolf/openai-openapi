@@ -23,6 +23,7 @@ Creates an image given a prompt.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.ImagesApi;
 
@@ -30,6 +31,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     ImagesApi apiInstance = new ImagesApi(defaultClient);
     CreateImageRequest createImageRequest = new CreateImageRequest(); // CreateImageRequest | 
@@ -59,7 +64,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -85,6 +90,7 @@ Creates an edited or extended image given an original image and a prompt.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.ImagesApi;
 
@@ -92,6 +98,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     ImagesApi apiInstance = new ImagesApi(defaultClient);
     File image = new File("/path/to/file"); // File | The image to edit. Must be a valid PNG file, less than 4MB, and square. If mask is not provided, image must have transparency, which will be used as the mask.
@@ -133,7 +143,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -159,6 +169,7 @@ Creates a variation of a given image.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.ImagesApi;
 
@@ -166,6 +177,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     ImagesApi apiInstance = new ImagesApi(defaultClient);
     File image = new File("/path/to/file"); // File | The image to use as the basis for the variation(s). Must be a valid PNG file, less than 4MB, and square.
@@ -203,7 +218,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 

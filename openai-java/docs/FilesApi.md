@@ -25,6 +25,7 @@ Upload a file that contains document(s) to be used across various endpoints/feat
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FilesApi;
 
@@ -32,6 +33,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FilesApi apiInstance = new FilesApi(defaultClient);
     File _file = new File("/path/to/file"); // File | Name of the [JSON Lines](https://jsonlines.readthedocs.io/en/latest/) file to be uploaded.  If the `purpose` is set to \\\"fine-tune\\\", each line is a JSON record with \\\"prompt\\\" and \\\"completion\\\" fields representing your [training examples](/docs/guides/fine-tuning/prepare-training-data). 
@@ -63,7 +68,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -89,6 +94,7 @@ Delete a file.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FilesApi;
 
@@ -96,6 +102,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FilesApi apiInstance = new FilesApi(defaultClient);
     String fileId = "fileId_example"; // String | The ID of the file to use for this request
@@ -125,7 +135,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -151,6 +161,7 @@ Returns the contents of the specified file
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FilesApi;
 
@@ -158,6 +169,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FilesApi apiInstance = new FilesApi(defaultClient);
     String fileId = "fileId_example"; // String | The ID of the file to use for this request
@@ -187,7 +202,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -213,6 +228,7 @@ Returns a list of files that belong to the user&#39;s organization.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FilesApi;
 
@@ -220,6 +236,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FilesApi apiInstance = new FilesApi(defaultClient);
     try {
@@ -245,7 +265,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -271,6 +291,7 @@ Returns information about a specific file.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.FilesApi;
 
@@ -278,6 +299,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     FilesApi apiInstance = new FilesApi(defaultClient);
     String fileId = "fileId_example"; // String | The ID of the file to use for this request
@@ -307,7 +332,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 

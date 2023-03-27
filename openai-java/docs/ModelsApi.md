@@ -23,6 +23,7 @@ Delete a fine-tuned model. You must have the Owner role in your organization.
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.ModelsApi;
 
@@ -30,6 +31,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     ModelsApi apiInstance = new ModelsApi(defaultClient);
     String model = "curie:ft-acmeco-2021-03-03-21-44-20"; // String | The model to delete
@@ -59,7 +64,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -85,6 +90,7 @@ Lists the currently available models, and provides basic information about each 
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.ModelsApi;
 
@@ -92,6 +98,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     ModelsApi apiInstance = new ModelsApi(defaultClient);
     try {
@@ -117,7 +127,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -143,6 +153,7 @@ Retrieves a model instance, providing basic information about the model such as 
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.ModelsApi;
 
@@ -150,6 +161,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     ModelsApi apiInstance = new ModelsApi(defaultClient);
     String model = "text-davinci-001"; // String | The ID of the model to use for this request
@@ -179,7 +194,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 

@@ -25,6 +25,7 @@ Answers the specified question using the provided documents and examples.  The e
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.EnginesApi;
 
@@ -32,6 +33,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     EnginesApi apiInstance = new EnginesApi(defaultClient);
     CreateAnswerRequest createAnswerRequest = new CreateAnswerRequest(); // CreateAnswerRequest | 
@@ -61,7 +66,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -87,6 +92,7 @@ Classifies the specified &#x60;query&#x60; using provided examples.  The endpoin
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.EnginesApi;
 
@@ -94,6 +100,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     EnginesApi apiInstance = new EnginesApi(defaultClient);
     CreateClassificationRequest createClassificationRequest = new CreateClassificationRequest(); // CreateClassificationRequest | 
@@ -123,7 +133,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -149,6 +159,7 @@ The search endpoint computes similarity scores between provided query and docume
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.EnginesApi;
 
@@ -156,6 +167,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     EnginesApi apiInstance = new EnginesApi(defaultClient);
     String engineId = "davinci"; // String | The ID of the engine to use for this request.  You can select one of `ada`, `babbage`, `curie`, or `davinci`.
@@ -187,7 +202,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -213,6 +228,7 @@ Lists the currently available (non-finetuned) models, and provides basic informa
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.EnginesApi;
 
@@ -220,6 +236,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     EnginesApi apiInstance = new EnginesApi(defaultClient);
     try {
@@ -245,7 +265,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
@@ -271,6 +291,7 @@ Retrieves a model instance, providing basic information about it such as the own
 import space.fraktured.ai.client.ApiClient;
 import space.fraktured.ai.client.ApiException;
 import space.fraktured.ai.client.Configuration;
+import space.fraktured.ai.client.auth.*;
 import space.fraktured.ai.client.models.*;
 import space.fraktured.ai.client.api.EnginesApi;
 
@@ -278,6 +299,10 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.openai.com/v1");
+    
+    // Configure HTTP bearer authorization: openai-api-key
+    HttpBearerAuth openai-api-key = (HttpBearerAuth) defaultClient.getAuthentication("openai-api-key");
+    openai-api-key.setBearerToken("BEARER TOKEN");
 
     EnginesApi apiInstance = new EnginesApi(defaultClient);
     String engineId = "davinci"; // String | The ID of the engine to use for this request 
@@ -307,7 +332,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[openai-api-key](../README.md#openai-api-key)
 
 ### HTTP request headers
 
